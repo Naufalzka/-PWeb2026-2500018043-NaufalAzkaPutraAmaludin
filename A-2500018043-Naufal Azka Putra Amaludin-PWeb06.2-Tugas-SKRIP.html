@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Layout 3 Kolom</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+.header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+/* Baris untuk kolom */
+.row {
+  display: flex;
+}
+
+/* Tiga kolom */
+.column {
+  flex: 33.33%;
+  padding: 20px;
+  height: 300px;
+  text-align: center;
+  color: white;
+}
+
+/* Warna tiap kolom */
+.kolom1 {
+  background-color: #2196F3;
+}
+
+.kolom2 {
+  background-color: #f44336;
+}
+
+.kolom3 {
+  background-color: #ff9800;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h2>HEADER</h2>
+  <p>Ini adalah bagian header website</p>
+</div>
+
+<!-- 1 Baris dengan 3 Kolom -->
+<div class="row">
+
+  <div class="column kolom1">
+    <h2>KOLOM 1</h2>
+    <p>Berisi informasi pertama</p>
+  </div>
+
+  <div class="column kolom2">
+    <h2>KOLOM 2</h2>
+    <p>Berisi informasi kedua</p>
+  </div>
+
+  <div class="column kolom3">
+    <h2>KOLOM 3</h2>
+    <p>Berisi informasi ketiga</p>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <p>FOOTER WEBSITE</p>
+</div>
+
+</body>
+</html>
